@@ -7,21 +7,21 @@ const FeedbackOptions = ({ onLeaveFeedback }) => {
       <button
         type="button"
         className={css['options-btn']}
-        onClick={onLeaveFeedback}
+        onClick={() => onLeaveFeedback('good')}
       >
         Good
       </button>
       <button
         type="button"
         className={css['options-btn']}
-        onClick={onLeaveFeedback}
+        onClick={() => onLeaveFeedback('neutral')}
       >
         Neutral
       </button>
       <button
         type="button"
         className={css['options-btn']}
-        onClick={onLeaveFeedback}
+        onClick={() => onLeaveFeedback('bad')}
       >
         Bad
       </button>

@@ -13,10 +13,9 @@ class App extends Component {
     bad: 0,
   };
 
-  handleLeaveFeedback = e => {
-    const currValue = e.target.innerText;
+  handleLeaveFeedback = variant => {
     this.setState(prevState => ({
-      [currValue.toLowerCase()]: prevState[currValue.toLowerCase()] + 1,
+      [variant.toLowerCase()]: prevState[variant.toLowerCase()] + 1,
     }));
   };
 
